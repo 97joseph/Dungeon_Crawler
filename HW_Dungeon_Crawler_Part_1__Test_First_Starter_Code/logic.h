@@ -1,15 +1,14 @@
 #ifndef LOGIC_H
 #define LOGIC_H
 
-#define INFO(X) std::cout << "[INFO] ("<<__FUNCTION__<<":"<<__LINE__<<") " << #X << " = " << X << "\n";
-#define INFO_STRUCT(X) std::cout << "[INFO] ("<<__FUNCTION__<<":"<<__LINE__<<") " << #X << " = {" << X.row << "," << X.col << "," << X.treasure << "}" << "\n";
-#define FLUSH std::cout << std::flush;
+#define INFO(X) cout << "[INFO] ("<<__FUNCTION__<<":"<<__LINE__<<") " << #X << " = " << X << endl;
+#define INFO_STRUCT(X) cout << "[INFO] ("<<__FUNCTION__<<":"<<__LINE__<<") " << #X << " = {" << X.row << "," << X.col << "," << X.treasure << "}" << endl;
 
 // TODO(student): nothing in here.
 //                do not change this file
 //                do not submit this file
 
-#include <string>
+#include <string
 
 // Player object container
 struct Player {
@@ -106,7 +105,7 @@ char** resizeMap(char** map, int& maxRow, int& maxCol);
  * @param   map         Dungeon map.
  * @param   maxRow      Number of rows in the dungeon table (aka height).
  * @param   maxCol      Number of columns in the dungeon table (aka width).
- * @param   player      Player object to by reference to see current location.
+ * @param   player      Player object to pass by reference to see current location.
  * @param   nextRow     Player's next row on the dungeon map (up/down).
  * @param   nextCol     Player's next column on dungeon map (left/right).
  * @return  Player's movement status after updating player's position.
